@@ -3,13 +3,16 @@ import { NavLink as Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: #d7a49a;
+  background: black;
   height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+  @media only screen and (min-width: 768px) and (max-width: 1040px) {
+    padding: 30px;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -82,30 +85,3 @@ export const NavMenu = styled.div`
       isOpen ? "translateX(0)" : "translateX(100%)"};
   }
 `;
-
-// export const NavBtn = styled.nav`
-//   display: flex;
-//   align-items: center;
-//   margin-right: 24px;
-
-//   @media screen and (max-width: 768px) {
-//     display: none;
-//   }
-// `;
-
-// export const NavBtnLink = styled(Link)`
-//   border-radius: 4px;
-//   background: #256ce1;
-//   padding: 10px 22px;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-//   text-decoration: none;
-
-//   &: hover {
-//     transition: all 0.2s ease-in-out;
-//     background: #fff;
-//     color: #010606;
-//   }
-// `;

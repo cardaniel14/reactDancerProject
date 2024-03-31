@@ -26,9 +26,6 @@ const Navbar = () => {
           <NavLink to="/contact-me">Contact</NavLink>
         </NavMenu>
       </Nav>
-      {/* <NavBtn>
-          <NavBtnLink to="/signin">Sign in</NavBtnLink>
-        </NavBtn> */}
     </>
   );
 };
